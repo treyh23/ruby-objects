@@ -4,11 +4,6 @@ class Person
     @job = job
   end
   
-  def name
-    @name
-  end
-  
-  def job=(new_job)
-    @job = new_job
-  end
+  attr_reader :name
+  attr_writer :name
 end
